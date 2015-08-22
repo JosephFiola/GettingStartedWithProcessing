@@ -27,6 +27,7 @@ function mouseDragged(){
 	yPos = mouseY;
 }
 function touchMoved(){
-	xPos = mouseX;
-	yPos = mouseY;
+	xPos = touchX;
+	yPos = touchY;
+	
 }
