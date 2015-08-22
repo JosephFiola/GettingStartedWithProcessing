@@ -14,40 +14,50 @@
 <body>
 <h2><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Getting Started with Processing</a> </h2>
 	
-<h4>Example 2-2: Make Circles </h4>
-
-mouse events are handled differently in P5. <a href ="http://p5js.org/reference/#/p5/mousePressed" target="_blank">http://p5js.org/reference/#/p5/mousePressed</a>
+<h4>Robot 1: Draw</h4>
 <pre>
-var value=255;
-var xPos = 0;
-var yPos = 0;
+strokeWeight(2);
+ellipseMode(RADIUS);
+	
+//neck
+stroke(102);                 // gray stroke
+line(266, 257, 266, 162);    // left
+line(276, 257, 276, 162);    // middle
+line(286, 257, 286, 162);    // right
+	
+//antennae
+line(276, 155, 246, 112);    // small
+line(276, 155, 306, 56);     // tall
+line(276, 155, 342, 170);    // medium
+	
+//body
+noStroke();
+fill(102);                   // fill gray
+ellipse(264, 377, 33, 33);   // antigravity orb
+fill(0);                     // black
+rect(219, 257, 90, 120);     // main body
+fill(102);                   // gray
+rect(219, 274, 90, 6);       // gray stripe
 
-function draw() {
-	fill(value);
-	ellipse(xPos, yPos, 80, 80);
-}
-
-function mousePressed(){
-	value = 0;
-}
-function mouseReleased(){
-	value = 255;
-}
-function mouseMoved(){
-	xPos = mouseX;
-	yPos = mouseY;
-}
-function mouseDragged(){
-	xPos = mouseX;
-	yPos = mouseY;	
-}
+//head
+fill(0);                     // black
+ellipse(276, 155, 45, 45);   // head
+fill(255);                   // white
+ellipse(288, 150, 14, 14);   // large eye
+fill(0);                     // black
+ellipse(288, 150, 3, 3);     // pupil
+fill(153);                   // gray
+ellipse(263, 148, 5, 5);     // small eye 1
+ellipse(296, 130, 4, 4);     // small eye 2
+ellipse(305, 162, 3, 3);     // small eye 3
 </pre>
+
 <p id="footer">
 	<small>
 		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a> / 
 		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank"> Visit book page</a> /
 		<a href="http://p5js.org" target"=blank">Visit p5js.org</a>
-	</small>	
+	</small>
 
 </body>
 </html>

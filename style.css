@@ -5,9 +5,9 @@ h1, h2, h3, h4 {
 
 
 #footer { 
-    position: fixed;
+    position: absolute;
     bottom: 10;
-    right: 10;
+	right : 10;
 }
 
 //hyperlinks

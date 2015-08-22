@@ -14,40 +14,45 @@
 <body>
 <h2><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Getting Started with Processing</a> </h2>
 	
-<h4>Example 2-2: Make Circles </h4>
-
-mouse events are handled differently in P5. <a href ="http://p5js.org/reference/#/p5/mousePressed" target="_blank">http://p5js.org/reference/#/p5/mousePressed</a>
+<h4>Example 3-20: Create Some Creatures</h4>
 <pre>
-var value=255;
-var xPos = 0;
-var yPos = 0;
+// Left creature
+beginShape();
+vertex(50, 120);
+vertex(100, 90);
+vertex(80, 20);
+vertex(210, 60);
+vertex(160, 80);
+vertex(200, 90);
+vertex(140, 100);
+vertex(130, 120);
+endShape();
+fill(0);
+ellipse(155, 60, 8, 8);
 
-function draw() {
-	fill(value);
-	ellipse(xPos, yPos, 80, 80);
-}
-
-function mousePressed(){
-	value = 0;
-}
-function mouseReleased(){
-	value = 255;
-}
-function mouseMoved(){
-	xPos = mouseX;
-	yPos = mouseY;
-}
-function mouseDragged(){
-	xPos = mouseX;
-	yPos = mouseY;	
-}
+//Right creature
+fill(255);
+beginShape();
+vertex(370, 120);
+vertex(360, 90);
+vertex(290, 80);
+vertex(340, 70);
+vertex(280, 50);
+vertex(420, 10);
+vertex(390, 50);
+vertex(410, 90);
+vertex(460, 120);
+endShape();
+fill(0);
+ellipse(345, 50, 10, 10);
 </pre>
+
 <p id="footer">
 	<small>
 		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a> / 
 		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank"> Visit book page</a> /
 		<a href="http://p5js.org" target"=blank">Visit p5js.org</a>
-	</small>	
+	</small>
 
 </body>
 </html>

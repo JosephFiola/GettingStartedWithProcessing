@@ -14,40 +14,24 @@
 <body>
 <h2><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Getting Started with Processing</a> </h2>
 	
-<h4>Example 2-2: Make Circles </h4>
-
-mouse events are handled differently in P5. <a href ="http://p5js.org/reference/#/p5/mousePressed" target="_blank">http://p5js.org/reference/#/p5/mousePressed</a>
+<h4>Example 3-16: Draw with Color</h4>
 <pre>
-var value=255;
-var xPos = 0;
-var yPos = 0;
-
-function draw() {
-	fill(value);
-	ellipse(xPos, yPos, 80, 80);
-}
-
-function mousePressed(){
-	value = 0;
-}
-function mouseReleased(){
-	value = 255;
-}
-function mouseMoved(){
-	xPos = mouseX;
-	yPos = mouseY;
-}
-function mouseDragged(){
-	xPos = mouseX;
-	yPos = mouseY;	
-}
+noStroke();
+background(0, 26, 51);         // Dark blue color
+fill( 255, 0, 0);              // Red Color
+ellipse(132, 82, 200, 200);    // Red circle
+fill(0, 255, 0);               // Green color
+ellipse(228, -16, 200, 200);   // Green circle
+fill(0, 0, 255);               // Blue color
+ellipse(268, 118, 200, 200);   // Blue circle
 </pre>
+
 <p id="footer">
 	<small>
 		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a> / 
 		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank"> Visit book page</a> /
 		<a href="http://p5js.org" target"=blank">Visit p5js.org</a>
-	</small>	
+	</small>
 
 </body>
 </html>

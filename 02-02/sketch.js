@@ -1,5 +1,6 @@
 function setup() {
 	createCanvas(600, 300);
+	background(200); //light gray to make canvas visible
   	smooth();
 }
 
@@ -29,5 +30,4 @@ function mouseDragged(){
 function touchMoved(){
 	xPos = touchX;
 	yPos = touchY;
-	
 }

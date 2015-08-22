@@ -14,40 +14,19 @@
 <body>
 <h2><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Getting Started with Processing</a> </h2>
 	
-<h4>Example 2-2: Make Circles </h4>
-
-mouse events are handled differently in P5. <a href ="http://p5js.org/reference/#/p5/mousePressed" target="_blank">http://p5js.org/reference/#/p5/mousePressed</a>
+<h4>Example 3-3: Draw a Line </h4>
 <pre>
-var value=255;
-var xPos = 0;
-var yPos = 0;
-
 function draw() {
-	fill(value);
-	ellipse(xPos, yPos, 80, 80);
-}
-
-function mousePressed(){
-	value = 0;
-}
-function mouseReleased(){
-	value = 255;
-}
-function mouseMoved(){
-	xPos = mouseX;
-	yPos = mouseY;
-}
-function mouseDragged(){
-	xPos = mouseX;
-	yPos = mouseY;	
+	line(20,50,420,110);
 }
 </pre>
+
 <p id="footer">
 	<small>
 		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a> / 
 		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank"> Visit book page</a> /
 		<a href="http://p5js.org" target"=blank">Visit p5js.org</a>
-	</small>	
+	</small>
 
 </body>
 </html>
