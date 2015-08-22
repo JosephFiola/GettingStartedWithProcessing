@@ -7,11 +7,11 @@ h1, h2, h3, h4 {
 #footer { 
     position: fixed;
     bottom: 10;
-    left: 10;
+    right: 10;
 }
 
 //hyperlinks
-a:link    {color:SteelBlue; background-color:transparent; text-decoration:none !important}
-a:visited {color:gray; background-color:transparent; text-decoration:none !important}
-a:hover   {color:DeepSkyBlue; background-color:transparent; text-decoration:none !important}
-a:active  {color:LightBlue; background-color:transparent; text-decoration:none !important}
+a:link    {color:SteelBlue; text-decoration:none !important}
+a:visited {color:gray; text-decoration:none !important}
+a:hover   {color:DeepSkyBlue; text-decoration:none !important}
+a:active  {color:LightBlue; text-decoration:none !important}

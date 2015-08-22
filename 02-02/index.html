@@ -12,17 +12,39 @@
 </head>
 
 <body>
-	<div class="page">
 <h2><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Getting Started with Processing</a> </h2>
 	
-<h4>Example 2-1: Draw an Ellipse </h4>
+<h4>Example 2-2: Make Circles </h4>
+
+mouse events are handled differently in P5. <a href ="http://p5js.org/reference/#/p5/mousePressed" target="_blank">http://p5js.org/reference/#/p5/mousePressed</a>
 <pre>
-ellipse(50,50,80,80);
+var value=255;
+var xPos = 0;
+var yPos = 0;
+
+function draw() {
+	fill(value);
+	ellipse(xPos, yPos, 80, 80);
+}
+
+function mousePressed(){
+	value = 0;
+}
+function mouseReleased(){
+	value = 255;
+}
+function mouseMoved(){
+	xPos = mouseX;
+	yPos = mouseY;
+}
+function mouseDragged(){
+	xPos = mouseX;
+	yPos = mouseY;	
+}
 </pre>
 
 <p id="footer"><a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a>
 	
 
-</div>	
 </body>
 </html>
