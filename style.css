@@ -1,6 +1,7 @@
 h1, h2, h3, h4 {
     text-align: left;
     color: black;
+	     margin-bottom: 0px;
 }
 
 
@@ -8,6 +9,8 @@ h1, h2, h3, h4 {
     position: fixed;
     bottom: 10;
 	right : 10;
+	text-align: right;
+	
 }
 
 //hyperlinks
