@@ -10,4 +10,6 @@ The original Processing example programs from the book are included in the lates
 
 You can download Processing from [http://processing.org/](http://processing.org/)
 
+This repository contains code examples from the book converted into[p5js.org](http://p5js.org). To best understand these code examples follow along in [the book ](http://shop.oreilly.com/product/0636920000570.do) where the authors go through and clearly explain the functionality and structure of each example.
+
 These p5js examples can be viewed on this repository's [github pages](http://josephfiola.github.io/GettingStartedWithProcessing/)
