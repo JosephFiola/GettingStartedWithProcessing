@@ -14,7 +14,7 @@ h1, h2, h3, h4 {
 }
 
 //hyperlinks
-a:link    {color:SteelBlue; text-decoration:none !important}
-a:visited {color:gray; text-decoration:none !important}
-a:hover   {color:DeepSkyBlue; text-decoration:none !important}
-a:active  {color:LightBlue; text-decoration:none !important}
+a,a:link    {color:SteelBlue; text-decoration:none !important}
+a,a:visited {color:gray; text-decoration:none !important}
+a,a:hover   {color:DeepSkyBlue; text-decoration:none !important}
+a,a:active  {color:LightBlue; text-decoration:none !important}
