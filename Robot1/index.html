@@ -3,61 +3,66 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../style.css">
   <script language="javascript" type="text/javascript" src="../p5.min.js"></script>
-  <!-- uncomment lines below to include extra p5 libraries -->
-	<!--<script language="javascript" src="../addons/p5.dom.js"></script>-->
-  <!--<script language="javascript" src="../addons/p5.sound.js"></script>-->
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
-  <!-- this line removes any default padding and style. you might only need one of these values set. -->
-  <style> body {padding: 10; margin: 10;} </style>
 </head>
 
 <body>
+<div id="page">
 <h3><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Code examples from "Getting Started with Processing" done in p5.js</a> </h3>
 	
 <h4>Robot 1: Draw</h4>
-<pre>
-strokeWeight(2);
-ellipseMode(RADIUS);
-	
-//neck
-stroke(102);                 // gray stroke
-line(266, 257, 266, 162);    // left
-line(276, 257, 276, 162);    // middle
-line(286, 257, 286, 162);    // right
-	
-//antennae
-line(276, 155, 246, 112);    // small
-line(276, 155, 306, 56);     // tall
-line(276, 155, 342, 170);    // medium
-	
-//body
-noStroke();
-fill(102);                   // fill gray
-ellipse(264, 377, 33, 33);   // antigravity orb
-fill(0);                     // black
-rect(219, 257, 90, 120);     // main body
-fill(102);                   // gray
-rect(219, 274, 90, 6);       // gray stripe
+<div id="canvas00"></div>
 
-//head
-fill(0);                     // black
-ellipse(276, 155, 45, 45);   // head
-fill(255);                   // white
-ellipse(288, 150, 14, 14);   // large eye
-fill(0);                     // black
-ellipse(288, 150, 3, 3);     // pupil
-fill(153);                   // gray
-ellipse(263, 148, 5, 5);     // small eye 1
-ellipse(296, 130, 4, 4);     // small eye 2
+<pre>									
+strokeWeight(2);						
+ellipseMode(RADIUS);					
+										
+//neck									
+stroke(102);                 // gray stroke
+line(266, 257, 266, 162);    // left	
+line(276, 257, 276, 162);    // middle	
+line(286, 257, 286, 162);    // right	
+	                                             
+//antennae                                       
+line(276, 155, 246, 112);    // small            
+line(276, 155, 306, 56);     // tall             
+line(276, 155, 342, 170);    // medium           
+	                                             
+//body                                           
+noStroke();                                      
+fill(102);                   // fill gray
+ellipse(264, 377, 33, 33);   // antigravity orb  
+fill(0);                     // black            
+rect(219, 257, 90, 120);     // main body        
+fill(102);                   // gray             
+rect(219, 274, 90, 6);       // gray stripe      
+                                                 
+//head                                           
+fill(0);                     // black            
+ellipse(276, 155, 45, 45);   // head 	
+fill(255);                   // white            
+ellipse(288, 150, 14, 14);   // large eye        
+fill(0);                     // black            
+ellipse(288, 150, 3, 3);     // pupil            
+fill(153);                   // gray             
+ellipse(263, 148, 5, 5);     // small eye 1      
+ellipse(296, 130, 4, 4);     // small eye 2      
 ellipse(305, 162, 3, 3);     // small eye 3
 </pre>
 
-<p id="footer">
-	<small>
-		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a> / 
-		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank"> Visit book page</a> /
-		<a href="http://p5js.org" target"=blank">Visit p5js.org</a>
+<div id="footer">
+<hr>
+<small>
+	<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank"> View Github Repository </a> / 
+	<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank"> Visit book page</a> /
+	<a href="http://p5js.org" target="_blank">Visit p5js.org</a><br>
+	<small><br>
+		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank">
+				Getting Started with Processing by Casey Reas and Ben Fry. Copyright 2010 Casey Reas and Ben Fry, 978-1-449-37980-3</a>
 	</small>
+</small>
 
+</div>
+</div>	
 </body>
 </html>

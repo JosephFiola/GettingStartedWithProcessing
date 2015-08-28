@@ -20931,7 +20931,8 @@ p5.prototype.saveTable = function(table, filename, options) {
     pWriter.println(str);
     pWriter.println('</head>');
 
-    pWriter.println('<body>');
+    pWriter.println('<body>
+<div id="page">');
     pWriter.println('  <table>');
 
     // make header if it has values
@@ -20957,7 +20958,9 @@ p5.prototype.saveTable = function(table, filename, options) {
       pWriter.println('    </tr>');
     }
     pWriter.println('  </table>');
-    pWriter.println('</body>');
+    pWriter.println('</div>
+</div>	
+</body>');
     pWriter.print('</html>');
   }
   // close and flush the pWriter

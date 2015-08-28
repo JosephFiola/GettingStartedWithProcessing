@@ -1,9 +1,9 @@
 function setup() {
-  // uncomment this line to make the canvas the full size of the window
- //  createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(480, 120);
+	canvas.parent("canvas00");
+	background(200);
 }
 
 function draw() {
-  // draw stuff here
    ellipse(50, 50, 50, 50);
 }

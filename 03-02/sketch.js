@@ -1,6 +1,7 @@
 function setup() {
-	createCanvas(480, 120);
-	background(210); //light gray background to make it visible in this example
+	var canvas = createCanvas(480, 120);
+	canvas.parent("canvas00");
+	background(200); //light gray background to make it visible in this example
 }
 
 var xPos = 240;
@@ -11,6 +12,11 @@ function draw() {
 }
 
 function mousePressed(){
+	xPos = mouseX;
+	yPos = mouseY;
+}
+
+function mouseDragged(){
 	xPos = mouseX;
 	yPos = mouseY;
 }

@@ -1,7 +1,7 @@
 function setup() {
-	createCanvas(600, 300);
-	background(200); //light gray to make canvas visible
-  	smooth();
+	var canvas = createCanvas(480, 120);
+	canvas.parent("canvas00");
+	background(200);
 }
 
 var value=255;
