@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script language="javascript" type="text/javascript" src="../p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</head>
+
+<body>
+<div id="page">
+
+<h3><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Code examples from "Getting Started with Processing" done in p5.js</a> </h3>
+	
+<h4>Example 5-15: Find the Cursor</h4>
+
+<div id="canvas"></div>
+
+<pre>
+var x = 0;
+var offset = 10;
+
+function setup() {
+  x = width/2;
+}
+
+function draw() {
+  if (mouseX > x){
+    x += 0.5;
+    offset = -10;
+    }
+  if (mouseX < x){
+    x -= 0.5;
+    offset = 10;
+    }
+  line(x, 0, x, height);
+  line(mouseX, mouseY, mouseX + offset, mouseY - 10);
+  line(mouseX, mouseY, mouseX + offset, mouseY + 10);
+  line(mouseX, mouseY, mouseX + offset*3, mouseY);
+}
+</pre>
+
+<p id="footer">
+<hr>
+	<small>
+		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank">Github repository </a> /
+		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank">book page</a> /
+		<a href="http://p5js.org" target="_blank">p5js.org</a> /
+		<a href="http://josephfiola.com" target="_blank">josephfiola.com</a><br>
+		<small><br>
+			<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank">
+				Getting Started with Processing by Casey Reas and Ben Fry. Copyright 2010 Casey Reas and Ben Fry, 978-1-449-37980-3</a>
+		</small>
+	</small>
+</p>
+
+
+</div>	
+</body>
+</html>

@@ -7,7 +7,7 @@ var ny = y - bodyHeight - neckHeight - radius;
 
 function setup() {
 	var canvas = createCanvas(720, 480);
-	canvas.parent("canvas00");
+	canvas.parent("canvas");
 	background(200);
 	ellipseMode(RADIUS);
 	strokeWeight(2);

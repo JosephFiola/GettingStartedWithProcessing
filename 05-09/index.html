@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script language="javascript" type="text/javascript" src="../p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</head>
+
+<body>
+<div id="page">
+
+<h3><a href="http://josephfiola.github.io/GettingStartedWithProcessing">Code examples from "Getting Started with Processing" done in p5.js</a> </h3>
+	
+<h4>Example 5-9: Smooth Lines with Easing</h4>
+
+<div id="canvas"></div>
+
+<pre>
+var x = 0;
+var y = 0;
+var px = 0;
+var py = 0;
+var easing = 0.05;
+
+function draw() {
+  var targetX = mouseX;
+  x += (targetX - x) * easing;
+  var targetY = mouseY;
+  y += (targetY - y) * easing;
+  var weight = dist(x, y, px, py);
+  strokeWeight(weight);
+  line(x, y, px, py);
+  py = y;
+  px = x;
+}
+</pre>
+
+<p id="footer">
+<hr>
+	<small>
+		<a href="https://github.com/JosephFiola/GettingStartedWithProcessing" target="_blank">Github repository </a> /
+		<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank">book page</a> /
+		<a href="http://p5js.org" target="_blank">p5js.org</a> /
+		<a href="http://josephfiola.com" target="_blank">josephfiola.com</a><br>
+		<small><br>
+			<a href="http://shop.oreilly.com/product/0636920000570.do" target="_blank">
+				Getting Started with Processing by Casey Reas and Ben Fry. Copyright 2010 Casey Reas and Ben Fry, 978-1-449-37980-3</a>
+		</small>
+	</small>
+</p>
+
+
+</div>	
+</body>
+</html>

@@ -2,7 +2,7 @@ var iSlider;
 
 function setup() {
 	var canvas = createCanvas(480, 120);
-	canvas.parent("canvas00");
+	canvas.parent("canvas");
 	background(200);
 	
 	iSlider = createSlider(0, 255, 100);
